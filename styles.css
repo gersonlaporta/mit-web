@@ -1,35 +1,39 @@
-     nav {
+    nav {
         background-color: white;
-      }
+    }
 
-      .col-lg-4 {
+    .col-lg-4 {
         margin-bottom: 30px;
-      }
+    }
 
-      .breadcrumb {
+    .breadcrumb {
         margin-bottom: 18px;
         background-color: white;
-      }
-      
-      header {
+    }
+    
+    header {
         margin-top: 56px;
-      }
+    }
 
-      /*
-      a {
+    /*
+    a {
         color: #33C164;
-      }
+    }
 
-      a:hover {
+    a:hover {
         color: #8AE0B1;
         text-decoration: none;
-      }
+    }
       */
 
-      footer {
+    footer {
         margin-top: 10px;
-      }
+    }
 
-      .cards {
+    .cards {
         padding-bottom: 30px;
-      }
+    }
+
+    .fab {
+        color: #C5C3C6;
+    }

@@ -1,0 +1,35 @@
+     nav {
+        background-color: white;
+      }
+
+      .col-lg-4 {
+        margin-bottom: 30px;
+      }
+
+      .breadcrumb {
+        margin-bottom: 18px;
+        background-color: white;
+      }
+      
+      header {
+        margin-top: 56px;
+      }
+
+      /*
+      a {
+        color: #33C164;
+      }
+
+      a:hover {
+        color: #8AE0B1;
+        text-decoration: none;
+      }
+      */
+
+      footer {
+        margin-top: 10px;
+      }
+
+      .cards {
+        padding-bottom: 30px;
+      }

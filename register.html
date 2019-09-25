@@ -40,16 +40,20 @@
     <style type="text/css">
 
       a {
-        color: #5FAECF;
+        color: #E56388;
       }
-      
+
       a:hover {
-        color: #ADD7E7;
+        color: #F2B0C3;
         text-decoration: none;
       }
 
       .fab:hover {
-        color: #5FAECF;
+        color: #E56388;
+      }
+
+      #asterisk {
+        color: red;
       }
 
     </style>
@@ -117,37 +121,110 @@
           
           <div class="">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item"><a href="virtual-campus.html">Virtual Campus</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Register</li>
+              <li class="breadcrumb-item active" aria-current="page">Log In</li>
             </ol>
           </div>
 
           <div class="social-media pt-3">
-              <a class="py-0 mr-3 p-0 text-dark d-inline-block" href="https://www.facebook.com/MITnews" target="_blank">
-                <i class="fab fa-facebook-f fa-1x fa-fw"></i>
-              </a>
-              <a class="py-0 mr-3 p-0 text-dark d-inline-block" href="https://twitter.com/mit" target="_blank">
-                <i class="fab fa-twitter fa-1x fa-fw"></i>
-              </a>
-              <a class="py-0 mr-3 p-0 text-dark d-inline-block" href="https://www.youtube.com/mit" target="_blank">
-                <i class="fab fa-youtube fa-1x fa-fw"></i>
-              </a>
-              <a class="py-0 mr-3 p-0 text-dark d-inline-block" href="https://www.linkedin.com/school/mit/" target="_blank">
-                <i class="fab fa-linkedin-in fa-1x fa-fw"></i>
-              </a>
-              <a class="py-0 mr-3 p-0 text-dark d-inline-block" href="https://www.instagram.com/mitpics/" target="_blank">
-                <i class="fab fa-instagram fa-1x fa-fw"></i>
-              </a>
-              <a class="py-0 mr-3 p-0 text-dark d-inline-block" href="https://www.pinterest.es/mitcampus/?autologin=true" target="_blank">
-                <i class="fab fa-pinterest fa-1x fa-fw"></i>
-              </a>
+            <a class="py-0 mr-3 p-0 text-dark d-inline-block" href="https://www.facebook.com/MITnews" target="_blank">
+              <i class="fab fa-facebook-f fa-1x fa-fw"></i>
+            </a>
+            <a class="py-0 mr-3 p-0 text-dark d-inline-block" href="https://twitter.com/mit" target="_blank">
+              <i class="fab fa-twitter fa-1x fa-fw"></i>
+            </a>
+            <a class="py-0 mr-3 p-0 text-dark d-inline-block" href="https://www.youtube.com/mit" target="_blank">
+              <i class="fab fa-youtube fa-1x fa-fw"></i>
+            </a>
+            <a class="py-0 mr-3 p-0 text-dark d-inline-block" href="https://www.linkedin.com/school/mit/" target="_blank">
+              <i class="fab fa-linkedin-in fa-1x fa-fw"></i>
+            </a>
+            <a class="py-0 mr-3 p-0 text-dark d-inline-block" href="https://www.instagram.com/mitpics/" target="_blank">
+              <i class="fab fa-instagram fa-1x fa-fw"></i>
+            </a>
+            <a class="py-0 mr-3 p-0 text-dark d-inline-block" href="https://www.pinterest.es/mitcampus/?autologin=true" target="_blank">
+              <i class="fab fa-pinterest fa-1x fa-fw"></i>
+            </a>
           </div>
         </div>
 
       </div>
 
-<!-- PROJECTS ================================================== -->
+<!-- FORM ================================================== -->
+
+<div class="container">
+
+    <h2>REGISTER</h2>
+    <br>
+  
+    <div class="row">
+  
+      <div class="col-lg-6 mb-4">
+        <form name="sentMessage" id="contactForm" novalidate>
+          
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>First Name: <label id="asterisk">*</label></label>
+              <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+            </div>
+          </div>
+
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Last Name: <label id="asterisk">*</label></label>
+              <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+            </div>
+          </div>
+
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Email Address: <label id="asterisk">*</label></label>
+              <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+            </div>
+          </div>
+
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">
+              I accept the 
+              <a href="terms-conditions.html" target="_blank">Terms and Conditions </a>
+              and
+              <a href="privacy-policy.html" target="_blank">Privacy Policy.</a>
+            </label>
+          </div>
+
+            <br>
+
+              <div class="row">
+
+                <div class="col-auto mr-auto">
+                  <a class="d-inline-block"href="#">Forgot password</a>
+                </div>
+
+                <div class="col text-center">
+                  <!-- For success/fail messages -->
+                  <button type="submit" class="btn btn-primary" id="sendMessageButton">Log In</button>
+                </div>
+
+                <div class="col-auto mr-auto">
+                  <a class="d-inline-block" href="#">Creat new account</a>
+                </div>
+
+              </div>
+
+        </form>
+
+      </div>
+  
+      <!-- Map Column -->
+      <div class="map col-lg-6 mb-4">
+        <!-- Embedded Google Map -->
+        <img src="img/people-coffee-tea-meeting.jpg" alt="Log in" height="" width="100%">
+      </div>
+    </div>
+    
+  </div>
 
 <!-- FOOTER ================================================== -->
 

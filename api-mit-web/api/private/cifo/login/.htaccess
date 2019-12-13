@@ -1,0 +1,9 @@
+AddCharset UTF-8 .html
+AddCharset UTF-8 .php
+<IfModule mod_rewrite.c>
+# Redirecció per al servei
+RewriteEngine  on
+RewriteBase    /api/private/cifo/login
+RewriteCond %{REQUEST_URI} "!index.php"
+RewriteRule ^(.*)$ index.php?$1 
+</IfModule>

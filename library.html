@@ -148,6 +148,73 @@
 
 <!-- PROJECTS ================================================== -->
 
+<div class="container-fluid">
+  <div class="col-lg-3  p-2">
+      <!----------------------creació dels selectors per buscar i filtrar les ofertes------------------>
+          <div class="accordion mt-0" id="accordion">
+                  <div class="card mb-2">
+                    <div class="card-header" id="headingOne" style="background-color: white;">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="color:black"><i class="fas fa-search"></i> Search</button>
+                      </h2>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                          <input type="text" class="form-control" placeholder="Write here..." aria-label="Username" aria-describedby="addon-wrapping">
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card">
+                    <div class="card-header" id="headingTwo" style="background-color: white;">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="color:black"><i class="fas fa-stream"></i>
+                            Filter
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+                      <div class="card-body">
+                        <form> 
+                          <fieldset class="form-group mb-4">
+                              <label for="exampleFormControlInput1">Familia Profesional</label>
+                              <select class="form-control"id="exampleFormControlInput1">
+                                  <option>-- Elija una opcion --</option>
+                              </select>
+                              <small id="exampleFormControlInput1" class="form-text text-muted">Lista de Familias profesionales</small>
+                          </fieldset>    
+                          <fieldset class="form-group mb-4">
+                                  <label for="exampleFormControlInput1">Cursos</label>
+                                  <select class="form-control"id="exampleFormControlInput1">
+                                      <option>-- Elija una opcion --</option>
+                                  </select>
+                                  <small id="exampleFormControlInput1" class="form-text text-muted">Lista de Cursos</small>
+                          </fieldset>
+                          <fieldset class="form-group mb-4">
+                                  <label for="exampleFormControlInput1">Centros de Formacion</label>
+                                  <select class="form-control"id="exampleFormControlInput1">
+                                      <option>-- Elija una opcion --</option>
+                                  </select>
+                                  <small id="exampleFormControlInput1" class="form-text text-muted">Lista de Centros de Formacion</small>
+                          </fieldset>
+                          <div class="d-flex justify-content-left">    
+                              <button type="button" class="btn btn-white mr-2" style="background-color: grey; color:white;">Delete</button>
+                              <button type="button" class="btn btn-white" style="background-color: grey; color:white;">Filter</button>
+                          </div>
+                        </form> 
+                      </div>
+                    </div>
+                  </div>
+          </div>
+
+  </div>
+  <div class="col-lg-8">
+
+  </div>
+
+</div>
+
 <!-- FOOTER ================================================== -->
 
     <!-- Footer
@@ -245,6 +312,12 @@
             <li>
               <a href="#!">Legal</a>
             </li>
+            <li>
+                -
+              </li>
+            <li>
+              <a href="#!">Accessibility</a>
+            </li>
           </ul>
   
         </div>
@@ -260,13 +333,12 @@
   
           <ul class="list-unstyled">
             <li>
-              <p>Legal: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi illo consequuntur obcaecati, ratione dolorem nihil et quidem, natus excepturi laboriosam facilis amet quia illum nobis eligendi non vitae architecto reiciendis.</p>
-            </li>
-            <li>
-              <a href="#!">Accessibility</a>
+              <div class="d-flex justify-content-start">
+              <img src="img/mit-history-logo.png" alt="" style="height: 120px;">
+              <p class="ml-4">Legal: In addition to the main MIT website, MIT departments, labs, centers, and individuals publish many other websites and pages outside the scope of this privacy statement, which may post and adhere to their own <a href="politica.html">privacy</a> and <a href="politica.html">cookies policies.</a></p>
+              </div>
             </li>
           </ul>
-  
         </div>
         <!-- Grid column -->
   
@@ -285,14 +357,35 @@
   </footer>
   <!-- Footer -->
 
-  <!-- jQuery -->
-      
-    <script   src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-      
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
-    <!-- Javascript de Bootstrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+  <!-- COOKIES -->
+  <!-- Inici del Modal (Vertically Centered) de Bootstrap -->
 
-  </body>
+  <div class="modal fade" id="boxRGPD" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document" >
+      <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Cookies & Privacy Policy</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          </div>
+          <div class="modal-body">
+              We take your privacy as seriously as we take our journalism. Please review our updated <a href="politica.html">privacy</a> and <a href="politica.html">cookies policies.</a>
+          </div>
+          <div class="modal-footer">
+              <button id="btnRGPD" type="button" class="btn btn-dark">Accept</button>
+          </div>
+      </div>
+      </div>
+  </div>
 
+<!-- Final del Modal (Vertically Centered) de Bootstrap -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="cookies.js"></script>
+</body>
 </html>

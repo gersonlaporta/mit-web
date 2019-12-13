@@ -27,7 +27,7 @@
       */
 
     footer {
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     .cards {
@@ -37,3 +37,7 @@
     .fab {
         color: #C5C3C6;
     }
+
+    /* #headingOne {
+        border-radius: 0px 0px 0px 0px !important;
+    } */

@@ -306,6 +306,12 @@
             <li>
               <a href="#!">Legal</a>
             </li>
+            <li>
+                -
+              </li>
+            <li>
+              <a href="#!">Accessibility</a>
+            </li>
           </ul>
   
         </div>
@@ -321,13 +327,12 @@
   
           <ul class="list-unstyled">
             <li>
-              <p>Legal: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi illo consequuntur obcaecati, ratione dolorem nihil et quidem, natus excepturi laboriosam facilis amet quia illum nobis eligendi non vitae architecto reiciendis.</p>
-            </li>
-            <li>
-              <a href="#!">Accessibility</a>
+              <div class="d-flex justify-content-start">
+              <img src="img/mit-history-logo.png" alt="" style="height: 120px;">
+              <p class="ml-4">Legal: In addition to the main MIT website, MIT departments, labs, centers, and individuals publish many other websites and pages outside the scope of this privacy statement, which may post and adhere to their own <a href="politica.html">privacy</a> and <a href="politica.html">cookies policies.</a></p>
+              </div>
             </li>
           </ul>
-  
         </div>
         <!-- Grid column -->
   
@@ -346,14 +351,35 @@
   </footer>
   <!-- Footer -->
 
-  <!-- jQuery -->
-      
-    <script   src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-      
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
-    <!-- Javascript de Bootstrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+  <!-- COOKIES -->
+  <!-- Inici del Modal (Vertically Centered) de Bootstrap -->
 
-  </body>
+  <div class="modal fade" id="boxRGPD" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document" >
+      <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Cookies & Privacy Policy</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          </div>
+          <div class="modal-body">
+              We take your privacy as seriously as we take our journalism. Please review our updated <a href="politica.html">privacy</a> and <a href="politica.html">cookies policies.</a>
+          </div>
+          <div class="modal-footer">
+              <button id="btnRGPD" type="button" class="btn btn-dark">Accept</button>
+          </div>
+      </div>
+      </div>
+  </div>
 
+<!-- Final del Modal (Vertically Centered) de Bootstrap -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="cookies.js"></script>
+</body>
 </html>
